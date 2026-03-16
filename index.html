@@ -1,61 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>meneath</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Meneath | Its mind, not you </title>
+
 <style>
+
 body{
 font-family: Arial;
 margin:0;
-background:#f5f5f5;
+background:#f6f8f7;
+color:#333;
 text-align:center;
 }
 
 header{
-background:#333;
+background:url('images/hero.jpg');
+background-size:cover;
+background-position:center;
 color:white;
-padding:40px;
+padding:120px 20px;
+}
+
+header h1{
+font-size:48px;
+}
+
+header p{
+font-size:20px;
 }
 
 section{
-padding:50px;
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#2e4f4f;
+}
+
+.tools{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 button{
-background:#007bff;
-color:white;
+padding:14px 28px;
 border:none;
-padding:15px 25px;
-font-size:18px;
-border-radius:5px;
+border-radius:6px;
+font-size:16px;
 cursor:pointer;
+margin:8px;
+}
+
+.whatsapp{background:#25D366;color:white;}
+.telegram{background:#229ED9;color:white;}
+.instagram{background:#E1306C;color:white;}
+
+img{
+width:100%;
+border-radius:10px;
+margin-top:20px;
 }
 
 footer{
-background:#222;
+background:#2e4f4f;
 color:white;
-padding:20px;
+padding:30px;
+margin-top:40px;
 }
+
+@media(max-width:700px){
+header h1{font-size:34px;}
+.tools{flex-direction:column;align-items:center;}
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Welcome to meneath</h1>
-<p>Its not you, its your mind</p>
+<h1>Meneath</h1>
+<p>A quiet space for your mind.</p>
+<p>Pause. Breathe. Reset.</p>
 </header>
 
 <section>
-<h2>About Me</h2>
-<p>rmshivam</p>
 
-<button onclick="alert('Thanks for visiting!')">
-Click Me
+<h2>Why Meneath Exists</h2>
+
+<p>
+Modern life is loud.  
+Thoughts race. Overthinking grows.
+
+Meneath is a calm digital space  
+where your mind can slow down.
+</p>
+
+</section>
+
+<section>
+
+<h2>Simple Mind Reset Tools</h2>
+
+<div class="tools">
+
+<div class="card">
+<h3>3 Minute Reset</h3>
+<p>Close your eyes. Breathe slowly.  
+Inhale for 4 seconds.  
+Exhale for 6 seconds.</p>
+</div>
+
+<div class="card">
+<h3>Stop Overthinking</h3>
+<p>If the thought won't matter  
+in 5 years, give it only  
+5 minutes of your mind.</p>
+</div>
+
+<div class="card">
+<h3>Ground Yourself</h3>
+<p>Look around and name  
+5 things you see,  
+4 things you feel.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>A Moment of Calm</h2>
+
+<img src="images/lake.jpg">
+
+<p>
+Sometimes your mind just needs  
+a quiet moment like this.
+</p>
+
+</section>
+
+<section>
+
+<h2>Visit Our Space</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300"
+style="border:0;">
+</iframe>
+
+</section>
+
+<section>
+
+<h2>Connect With Meneath</h2>
+
+<button class="whatsapp"
+onclick="window.location.href='https://wa.me/YOURNUMBER'">
+WhatsApp
 </button>
+
+<button class="telegram"
+onclick="window.location.href='https://t.me/rmshivam'">
+Telegram
+</button>
+
+<button class="instagram"
+onclick="window.location.href='https://instagram.com/rmshivam'">
+Instagram
+</button>
+
 </section>
 
 <footer>
-<p>© 2026 meneath</p>
+
+<p>Meneath © 2026</p>
+<p>A space where thoughts slow down.</p>
+
 </footer>
 
 </body>
