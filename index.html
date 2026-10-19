@@ -1,200 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Meneath | Its mind, not you </title>
-
+<meta name="theme-color" content="#f7f0eb">
+<title>A little note</title>
 <style>
-
-body{
-font-family: Arial;
-margin:0;
-background:#f6f8f7;
-color:#333;
-text-align:center;
-}
-
-header{
-background:url('images/hero.jpg');
-background-size:cover;
-background-position:center;
-color:white;
-padding:120px 20px;
-}
-
-header h1{
-font-size:48px;
-}
-
-header p{
-font-size:20px;
-}
-
-section{
-padding:60px 20px;
-max-width:900px;
-margin:auto;
-}
-
-h2{
-color:#2e4f4f;
-}
-
-.tools{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-width:250px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-button{
-padding:14px 28px;
-border:none;
-border-radius:6px;
-font-size:16px;
-cursor:pointer;
-margin:8px;
-}
-
-.whatsapp{background:#25D366;color:white;}
-.telegram{background:#229ED9;color:white;}
-.instagram{background:#E1306C;color:white;}
-
-img{
-width:100%;
-border-radius:10px;
-margin-top:20px;
-}
-
-footer{
-background:#2e4f4f;
-color:white;
-padding:30px;
-margin-top:40px;
-}
-
-@media(max-width:700px){
-header h1{font-size:34px;}
-.tools{flex-direction:column;align-items:center;}
-}
-
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+  :root { --ink:#322c2d; --muted:#8b7776; --rose:#a85e70; --line:#eaded8; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; color:var(--ink);
+    font-family:'DM Sans', system-ui, sans-serif;
+    background:#f7f0eb;
+    background-image:radial-gradient(ellipse at 12% 5%,#ead3d0 0,transparent 32%),radial-gradient(ellipse at 92% 38%,#eee0cf 0,transparent 28%);
+  }
+  .topbar { height:5px; background:linear-gradient(90deg,#b66c7b,#e1b9ad,#c49b7b); }
+  .layout { width:min(100% - 32px, 1080px); margin:0 auto; padding:54px 0 76px; }
+  .eyebrow { display:flex; align-items:center; justify-content:center; gap:12px; color:var(--rose); font-size:11px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; margin-bottom:14px; }
+  .eyebrow:before,.eyebrow:after { content:""; width:30px; height:1px; background:#cda7a5; }
+  h1 { font-family:'Playfair Display', Georgia, serif; font-weight:500; text-align:center; font-size:clamp(36px,6vw,58px); line-height:1.12; letter-spacing:-.035em; margin:0; }
+  .subtitle { color:var(--muted); text-align:center; margin:15px 0 36px; font-size:14px; }
+  .paper {
+    position:relative; max-width:790px; margin:0 auto; padding:clamp(25px,6vw,66px);
+    background:rgba(255,253,250,.93); border:1px solid rgba(218,196,188,.8);
+    border-radius:4px 4px 18px 4px; box-shadow:0 24px 70px rgba(82,54,52,.10);
+  }
+  .paper:before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:linear-gradient(#c88991,#ead5c6); }
+  .paper:after { content:"❦"; position:absolute; right:24px; top:15px; color:#d9b6ae; font-size:22px; }
+  article { font-size:clamp(16px,1.55vw,18px); line-height:1.95; letter-spacing:.005em; overflow-wrap:anywhere; }
+  p { margin:0 0 1.45em; }
+  p:first-child { font-family:'Playfair Display',Georgia,serif; font-size:1.12em; color:#8e4d5e; }
+  p:last-child { margin-bottom:0; }
+  .bottom-mark { text-align:center; color:#b58b87; margin:30px auto 0; letter-spacing:.45em; font-size:13px; }
+  @media(max-width:600px) {
+    .layout { width:min(100% - 22px,1080px); padding:34px 0 46px; }
+    .subtitle { margin-bottom:24px; }
+    .paper { padding:30px 22px 32px; border-radius:3px 3px 14px 3px; }
+    article { font-size:16px; line-height:1.85; }
+    p { margin-bottom:1.35em; }
+    .paper:after { right:13px; top:9px; font-size:18px; }
+  }
+  @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
 </head>
-
 <body>
-
-<header>
-<h1>Meneath</h1>
-<p>A quiet space for your mind.</p>
-<p>Pause. Breathe. Reset.</p>
-</header>
-
-<section>
-
-<h2>Why Meneath Exists</h2>
-
-<p>
-Modern life is loud.  
-Thoughts race. Overthinking grows.
-
-Meneath is a calm digital space  
-where your mind can slow down.
-</p>
-
-</section>
-
-<section>
-
-<h2>Simple Mind Reset Tools</h2>
-
-<div class="tools">
-
-<div class="card">
-<h3>3 Minute Reset</h3>
-<p>Close your eyes. Breathe slowly.  
-Inhale for 4 seconds.  
-Exhale for 6 seconds.</p>
-</div>
-
-<div class="card">
-<h3>Stop Overthinking</h3>
-<p>If the thought won't matter  
-in 5 years, give it only  
-5 minutes of your mind.</p>
-</div>
-
-<div class="card">
-<h3>Ground Yourself</h3>
-<p>Look around and name  
-5 things you see,  
-4 things you feel.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>A Moment of Calm</h2>
-
-<img src="images/lake.jpg">
-
-<p>
-Sometimes your mind just needs  
-a quiet moment like this.
-</p>
-
-</section>
-
-<section>
-
-<h2>Visit Our Space</h2>
-
-<iframe
-src="https://maps.google.com/maps?q=indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300"
-style="border:0;">
-</iframe>
-
-</section>
-
-<section>
-
-<h2>Connect With Meneath</h2>
-
-<button class="whatsapp"
-onclick="window.location.href='https://wa.me/07509777409'">
-WhatsApp
-</button>
-
-<button class="telegram"
-onclick="window.location.href='https://t.me/rmshivam'">
-Telegram
-</button>
-
-<button class="instagram"
-onclick="window.location.href='https://instagram.com/rmshivam'">
-Instagram
-</button>
-
-</section>
-
-<footer>
-
-<p>Meneath © 2026</p>
-<p>A space where thoughts slow down.</p>
-
-</footer>
-
+<div class="topbar"></div>
+<main class="layout">
+  <div class="eyebrow">my honest take</div>
+<p class="subtitle"> मन में जो भी आया बस लिखता चला गया <br>just like a beautiful poem which I may recite you someday 🙃 </p>
+  <h1>Hi Shikha 👋😊</h1>
+  <p class="subtitle">a web page worth hosting.. <br><br> kuch chize repeat ho rahi he, to plz wapas pad lena 😊</p>
+  <section class="paper" aria-label="Personal note">
+    <article>
+        <p>Hi Shikha 👋😊</p>
+        <p>I know you're in absolute indifference mode 🤭, I don't know how you're perceiving me so do lemme clear my pov.. when I saw you, you're just a regular staff for me, mere dhyan hi ni diya tumhari taraf</p>
+        <p>but after 5 minutes something has changed.. the way you're doing your job with such a hectic schedule, tum khush thi (mere liye to bhot badi bat he yeh) talking nicely with everyone, its not that easy, it shows your temperament and inner core as a human.. bat karke pata chala.. arre yeh chhori to sensible aur humorous bhi he 😄</p>
+        <p>I'm not saying that I fell for you, I hardly know you, but itna to samjh aata he koi accha insan he ya nahi, tumse bat karke accha laga, aisa laga tumhe aur janna chahiye, baki to rab rakha 😂</p>
+        <p>me nahi janta, tum kya dekhti ho kisi person me, lekin me bhi accha hu yar 🙃, I know it sounds funny, me khud ke bare me hi bata raha hu, lekin me kya karu, tum janti kaha ho meko..</p>
+        <p>so, to get familiarity, lemme introduce myself, hi I'm shivam aur kesi ho tum😊.. svvv se hi btech kiya he (&amp; you did mba from there, I saw it on linkedin), iit qualified hu, khud ka web-based platform he ( "nameheist. com" .. ek bar open karke dekhna nameheist, vese meneath ka idea pasand aaya 🤞😁 )</p>
+        <p>yakin mano show off nahi kar raha 😁, bas bata raha hu ki normal ladka hi hu, me tumse agar clg ya workspace pe mila hota to may be equation kuch aur hoti 😄.. so koi bat ni he, ham ab bhi bat kar sakte he 🤭, me bhi accha insan hu yar, tumhe khud pata chal jayega 😊</p>
+        <p>ham mil sakte he kisi acchi jagah pe, gommatgiri ya ralamandal ya sirpur ya MacD ya badiya faluda (kya sahi banata he yar wo) 😊.. aur if you wanna go slow, we’ll talk on instagram, I’m in no hurry, I just wanna know you..</p>
+        <p>tum sensible, humorous, witty, clever, street smart ho, ek maturity to he tumme aur mera character spectrum bhi accha jyada wide he, kafi flexible hu, bakchodi se lekar quantum computing, poem se leke sketching, novel se leke movies, emotion to anatomy, atom to space, kashmir se kanyakumari (are mene to sach me ghuma he yeh 🤭) me kisi bhi level pe operate kar sakta hu 🙃 with minimal context switching time</p>
+        <p>aur aisa ni he sirf mera ki sirf mera hi angle he, tumhe bhi accha lagega mere sath bad ki bat, pakki bat he yeh 😁, khud se pucho ek bar kya unn 20 minutes me tumhe thik ni laga me, thoda to laga hoga na ki batein apne aap ho rahi he, accha to laga hoga yar</p>
+        <p>ek bar dekh lo shikha, ho sakta he tum ek acche insan ko miss kardo, aur koi long-term commit thode hi karna he abhi.. ho sakta he ham ek dusre ke compatible hi na ho, so may be ham dosti pe ruk jaye, aage na bade, kuch bhi possible he, lekin pehla step ek dusre ho janna hi he</p>
+        <p>aur haan agar kisi bhi moment pe tumko lage, me thik insan nahi hu ya accha na lage ya for any reason, to bata dena me khud bat karna band kar dunga, no questions asked, I promise.. so ek try to banta he, agar naye logo se bat hi ni karenge to pata kese chalega, kon kitna accha he, he na 🙃.? aur yeh bhi to ho sakta he, tum kharab nikal jao, me galat hu tumhare bare me, may be tum toxic ho, meko kya pata 😂.. sorry i’m just kidding 😊</p>
+        <p>aur ha, I sent you a msg on linkedin, and I may work with shalby as my client (bhot kam ki chiz hu me as a  marketer) so needed your sort of input, asking you out and this thing, both are independent event but I appreciate your help if you want to..</p>
+        <p>I know msg thoda lamba he, lekin bas khud ko sahi tarah se zahir karna chahta hu, entrepreneurial mindset he na 🙃.. aur itni sari kahaniya he tumme, aur mere me bhi to kuch bat hogi na, jo me use pad paa raha hu, are wah acchi philosophy he na yeh, ispe to poem likh sakte he 😊 </p>
+        <p>P.S. last try me 21 ko karunga 😁, a simple ask, wo pakka last hoga, uske bad kuch nahi, socho ham kabhi ni milenge uske bad.. may be yeh life ka best experience ho 🫣🤭, to plz man bhi jaiye Shikha Ji 🙃</p>
+        <p>chalo bye 👍😊</p>
+    </article>
+  </section>
+  <div class="bottom-mark" aria-hidden="true">✦　✦　✦</div>
+</main>
 </body>
 </html>
